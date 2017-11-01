@@ -1,0 +1,5 @@
+name: noGov Site Info
+type: module
+description: Profile module
+core: 8.x
+package: noGov

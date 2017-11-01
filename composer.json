@@ -1,0 +1,12 @@
+{
+  "name": "drupal/nogov_site_info",
+  "type": "drupal-module",
+  "description": "Profile module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/no-gov",
+  "require": {
+    "drupal/core": "^8.4",
+    "no-gov/nogov_info_theme": "dev-master"
+  }
+}
