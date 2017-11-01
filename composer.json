@@ -1,5 +1,5 @@
 {
-  "name": "drupal/nogov_site_info",
+  "name": "no-gov/nogov_site_info",
   "type": "drupal-module",
   "description": "Profile module",
   "keywords": ["Drupal"],
