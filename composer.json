@@ -5,8 +5,15 @@
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://github.com/no-gov",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
   "require": {
     "drupal/core": "^8.4",
+    "drupal/coffee": "^1.0-beta2",
     "no-gov/nogov_page": "dev-master",
     "no-gov/nogov_info_theme": "dev-master"
   }
