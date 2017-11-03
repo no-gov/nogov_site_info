@@ -1,0 +1,19 @@
+<?php
+
+use Drupal\language\Entity\ConfigurableLanguage;
+
+/**
+ * Implements hook_install().
+ */
+function nogov_site_info_install() {
+  // Install Bokmål.
+  $bokmal = ConfigurableLanguage::createFromLangcode('nb');
+  $bokmal->save();
+
+  // Install Nynorsk.
+  ConfigurableLanguage::createFromLangcode('nn')->save();
+
+  // Set default language.
+  \Drupal::configFactory()->getEditable('system.site')->set('default_langcode', $bokmal->getId())->save();
+  \Drupal::languageManager()->reset();
+}
