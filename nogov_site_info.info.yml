@@ -3,3 +3,19 @@ type: module
 description: Profile module
 core: 8.x
 package: noGov
+
+dependencies:
+  # Custom.
+  - nogov_page
+  # Core.
+  - block
+  - config
+  - config_translation
+  - content_translation
+  - image
+  - language
+  - rdf
+  - taxonomy
+  - toolbar
+  - views
+  # Contrib.
