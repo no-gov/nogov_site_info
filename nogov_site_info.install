@@ -16,4 +16,8 @@ function nogov_site_info_install() {
   // Set default language.
   \Drupal::configFactory()->getEditable('system.site')->set('default_langcode', $bokmal->getId())->save();
   \Drupal::languageManager()->reset();
+
+  // Set theme.
+  \Drupal::service('theme_handler')->install(['nogov_info_theme']);
+  \Drupal::configFactory()->getEditable('system.theme')->set('default', 'nogov_info_theme')->save();
 }
